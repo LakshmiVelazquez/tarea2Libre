@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Tarea libre 2</title>
+</head>
+
+<body>
+    <div class="Contenedor">
+        <h2>Lakshmi</h2>
+        <img src="ScyllaPerfil.png" alt="">
+
+        <div class="Contenedor_de_Votos">
+            
+            <button id="LikeBoton">
+                <img class="Corazones" src="Like.png" alt="">
+            </button>
+            <input type="number" id="Contador1" value="0" name="">
+
+
+            <button id="DisLikeBoton">
+                <img class="Corazones" src="Dislike.png" alt="">
+            </button>
+            <input type="number" id="Contador2" value="0" name="">
+            
+        </div>   
+
+    </div>
+
+    <script type="text/javascript">
+        let LikeBoton = document.querySelector('#LikeBoton');
+        let DisLikeBoton = document.querySelector('#DisLikeBoton');
+        let Contador1 = document.querySelector('#Contador1');
+        let Contador2 = document.querySelector('#Contador2');
+
+        LikeBoton.addEventListener('click',()=>{
+            Contador1.value = parseInt(Contador1.value) +1;
+            Contador1.style.color = "#13aff0";
+        })
+
+        DisLikeBoton.addEventListener('click',()=>{
+            Contador2.value = parseInt(Contador2.value) +1;
+            Contador2.style.color = "#13aff0";
+        })
+
+    </script>
+
+</body>
+
+</html>
